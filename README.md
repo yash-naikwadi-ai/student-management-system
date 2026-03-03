@@ -18,6 +18,9 @@ A command-line application built in Python to manage student records.
 - Lists
 - Loops and conditionals
 - String manipulation
+- 
+## Output
+![screenshot of program running]
 
 ## Author
 Yash Naikwadi - AI/ML Student
