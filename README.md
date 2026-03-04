@@ -8,6 +8,7 @@ A command-line application built in Python to manage student records.
 - Search students by name
 - Find class topper automatically
 - Grade calculation (A, B, C, D)
+- save,load data through file
 
 ## Technologies Used
 - Python 3
@@ -18,6 +19,10 @@ A command-line application built in Python to manage student records.
 - Lists
 - Loops and conditionals
 - String manipulation
+- File handling (open, read, write, append)
+- with statement
+- f-strings
+- try/except error handling 
   
 ## Output
 <img width="901" height="497" alt="1stscreenshot" src="https://github.com/user-attachments/assets/004c318f-04cb-4752-85c5-412b6f8cb380" />
