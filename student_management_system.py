@@ -1,4 +1,17 @@
 student=[]
+def load_students():
+    try:
+        with open("student.txt","r") as file:
+            content=file.read()
+            if content:
+                print("Previous records found and loaded successfully!")
+            else:
+                print("No records found")
+    except FileNotFoundError:
+        print("No records found")
+load_students()
+
+
 def add_student():
     name=input("Enter Name of Student=")
     roll_no=int(input("Enter Roll No of Student="))
@@ -22,7 +35,11 @@ def add_student():
         grade="D grade"
     scorecard={"name":name,"roll no":roll_no,"marks":subject,"total":total,"percentage":percentage,"grade":grade}
     student.append(scorecard)
+    with open("student.txt","a") as file:
+        file.write(f"Name:{name} |Roll No:{roll_no} | Maths:{maths} | Python:{python} | Artificial Intelligence:{ai} | English:{english} | Physics:{physics} | Total:{total} | percentage:{percentage} | grade:{grade}\n")
     print("Student added successfully!")
+
+
 
 def view_std():
     if len(student)==0:
